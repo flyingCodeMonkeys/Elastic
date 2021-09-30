@@ -1,0 +1,188 @@
+{
+    "items":
+    {
+        "aliases":
+        {},
+        "mappings":
+        {
+            "properties":
+            {
+                "anomalies":
+                {
+                    "properties":
+                    {
+                        "affects":
+                        {
+                            "type": "text",
+                            "fields":
+                            {
+                                "keyword":
+                                {
+                                    "type": "keyword"
+                               
+                                }
+                            }
+                        },
+                        "comment":
+                        {
+                            "type": "text",
+                            "fields":
+                            {
+                                "keyword":
+                                {
+                                    "type": "keyword",
+                              
+                                }
+                            }
+                        },
+                        "contacts":
+                        {
+                            "properties":
+                            {
+                                "address":
+                                {
+                                    "properties":
+                                    {
+                                        "city":
+                                        {
+                                            "type": "text",
+                                            "fields":
+                                            {
+                                                "keyword":
+                                                {
+                                                    "type": "keyword"
+                                                   
+                                                }
+                                            }
+                                        },
+                                        "country":
+                                        {
+                                            "type": "text",
+                                            "fields":
+                                            {
+                                                "keyword":
+                                                {
+                                                    "type": "keyword"
+                                                   
+                                                }
+                                            }
+                                        },
+                                      
+                                        "state":
+                                        {
+                                            "type": "text",
+                                            "fields":
+                                            {
+                                                "keyword":
+                                                {
+                                                    "type": "keyword",
+                                                    "ignore_above": 256
+                                                }
+                                            }
+                                        },
+                                      
+                                    }
+                          
+                        },
+                        "createdAt":
+                        {
+                            "type": "date"
+                        },
+                        "createdBy":
+                        {
+                            "type": "text",
+                            "fields":
+                            {
+                                "keyword":
+                                {
+                                    "type": "keyword",
+                                    "ignore_above": 256
+                                }
+                            }
+                        },
+                        
+                        "displayName":
+                        {
+                            "type": "text",
+                            "fields":
+                            {
+                                "keyword":
+                                {
+                                    "type": "keyword"
+                                  
+                                }
+                            }
+                        },
+                        "expirationDate":
+                        {
+                            "type": "date"
+                        },
+                        "id":
+                        {
+                            "type": "text",
+                            "fields":
+                            {
+                                "keyword":
+                                {
+                                    "type": "keyword"
+                                }
+                            }
+                        },
+                        "isActive":
+                        {
+                            "type": "boolean"
+                        },
+                        "showAlert":
+                        {
+                            "type": "boolean"
+                        },
+                        "type":
+                        {
+                            "type": "text",
+                            "fields":
+                            {
+                                "keyword":
+                                {
+                                    "type": "keyword"
+                                   
+                                }
+                            }
+                        },
+                        "updatedAt":
+                        {
+                            "type": "date"
+                        }
+                    }
+                },
+                     
+                "systemId":
+                {
+                    "type": "text",
+                    "fields":
+                    {
+                        "keyword":
+                        {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                }
+            }
+        },
+        "settings":
+        {
+            "index":
+            {
+                "creation_date": "1632938262648",
+                "number_of_shards": "1",
+                "number_of_replicas": "1",
+                "uuid": "fJCHLyPiR0eL2wHtxgOGew",
+                "version":
+                {
+                    "created": "135217827"
+                },
+                "provided_name": "items"
+            }
+        }
+    }
+}
