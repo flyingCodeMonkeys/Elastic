@@ -1,188 +1,356 @@
 {
-    "items":
-    {
-        "aliases":
-        {},
-        "mappings":
-        {
-            "properties":
-            {
-                "anomalies":
-                {
-                    "properties":
-                    {
-                        "affects":
-                        {
-                            "type": "text",
-                            "fields":
-                            {
-                                "keyword":
-                                {
-                                    "type": "keyword"
-                               
-                                }
-                            }
-                        },
-                        "comment":
-                        {
-                            "type": "text",
-                            "fields":
-                            {
-                                "keyword":
-                                {
-                                    "type": "keyword",
-                              
-                                }
-                            }
-                        },
-                        "contacts":
-                        {
-                            "properties":
-                            {
-                                "address":
-                                {
-                                    "properties":
-                                    {
-                                        "city":
-                                        {
-                                            "type": "text",
-                                            "fields":
-                                            {
-                                                "keyword":
-                                                {
-                                                    "type": "keyword"
-                                                   
-                                                }
-                                            }
-                                        },
-                                        "country":
-                                        {
-                                            "type": "text",
-                                            "fields":
-                                            {
-                                                "keyword":
-                                                {
-                                                    "type": "keyword"
-                                                   
-                                                }
-                                            }
-                                        },
-                                      
-                                        "state":
-                                        {
-                                            "type": "text",
-                                            "fields":
-                                            {
-                                                "keyword":
-                                                {
-                                                    "type": "keyword",
-                                                    "ignore_above": 256
-                                                }
-                                            }
-                                        },
-                                      
-                                    }
-                          
-                        },
-                        "createdAt":
-                        {
-                            "type": "date"
-                        },
-                        "createdBy":
-                        {
-                            "type": "text",
-                            "fields":
-                            {
-                                "keyword":
-                                {
-                                    "type": "keyword",
-                                    "ignore_above": 256
-                                }
-                            }
-                        },
-                        
-                        "displayName":
-                        {
-                            "type": "text",
-                            "fields":
-                            {
-                                "keyword":
-                                {
-                                    "type": "keyword"
-                                  
-                                }
-                            }
-                        },
-                        "expirationDate":
-                        {
-                            "type": "date"
-                        },
-                        "id":
-                        {
-                            "type": "text",
-                            "fields":
-                            {
-                                "keyword":
-                                {
-                                    "type": "keyword"
-                                }
-                            }
-                        },
-                        "isActive":
-                        {
-                            "type": "boolean"
-                        },
-                        "showAlert":
-                        {
-                            "type": "boolean"
-                        },
-                        "type":
-                        {
-                            "type": "text",
-                            "fields":
-                            {
-                                "keyword":
-                                {
-                                    "type": "keyword"
-                                   
-                                }
-                            }
-                        },
-                        "updatedAt":
-                        {
-                            "type": "date"
-                        }
-                    }
-                },
-                     
-                "systemId":
-                {
-                    "type": "text",
-                    "fields":
-                    {
-                        "keyword":
-                        {
-                            "type": "keyword",
-                            "ignore_above": 256
-                        }
-                    }
+  "items": {
+    "aliases": {},
+    "mappings": {
+      "properties": {
+        "anomalies": {
+          "properties": {
+            "affects": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
                 }
-            }
-        },
-        "settings":
-        {
-            "index":
-            {
-                "creation_date": "1632938262648",
-                "number_of_shards": "1",
-                "number_of_replicas": "1",
-                "uuid": "fJCHLyPiR0eL2wHtxgOGew",
-                "version":
-                {
-                    "created": "135217827"
+              }
+            },
+            "contacts": {
+              "properties": {
+                "address": {
+                  "properties": {
+                    "city": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "country": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "secondary": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "state": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "street": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    },
+                    "zip": {
+                      "type": "text",
+                      "fields": {
+                        "keyword": {
+                          "type": "keyword",
+                          "ignore_above": 256
+                        }
+                      }
+                    }
+                  }
                 },
-                "provided_name": "items"
+                "farsVendorId": {
+                  "type": "long"
+                },
+                "name": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            },
+            "createdAt": {
+              "type": "date"
+            },
+            "createdBy": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "description": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "displayName": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "expirationDate": {
+              "type": "date"
+            },
+            "id": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "isActive": {
+              "type": "boolean"
+            },
+            "showAlert": {
+              "type": "boolean"
+            },
+            "type": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "updatedAt": {
+              "type": "date"
             }
+          }
+        },
+        "id": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "name": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
+        },
+        "risk": {
+          "properties": {
+            "details": {
+              "properties": {
+                "contacts": {
+                  "properties": {
+                    "address": {
+                      "properties": {
+                        "city": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "country": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "state": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "street": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        },
+                        "zip": {
+                          "type": "text",
+                          "fields": {
+                            "keyword": {
+                              "type": "keyword",
+                              "ignore_above": 256
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "count": {
+                  "type": "long"
+                },
+                "description": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "displayName": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "expirationDate": {
+                  "type": "date"
+                },
+                "showAlert": {
+                  "type": "boolean"
+                },
+                "type": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "updatedAt": {
+                  "type": "date"
+                }
+              }
+            },
+            "level": {
+              "type": "text",
+              "fields": {
+                "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+                }
+              }
+            },
+            "riskLevelHistory": {
+              "properties": {
+                "comments": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "newRiskLevel": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "previousRiskLevel": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "updateUser": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                },
+                "updatedAt": {
+                  "type": "date"
+                },
+                "updatedAtShort": {
+                  "type": "text",
+                  "fields": {
+                    "keyword": {
+                      "type": "keyword",
+                      "ignore_above": 256
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "systemId": {
+          "type": "text",
+          "fields": {
+            "keyword": {
+              "type": "keyword",
+              "ignore_above": 256
+            }
+          }
         }
+      }
+    },
+    "settings": {
+      "index": {
+        "creation_date": "1632938262648",
+        "number_of_shards": "1",
+        "number_of_replicas": "1",
+        "uuid": "fJCHLyPiR0eL2wHtxgOGew",
+        "version": {
+          "created": "135217827"
+        },
+        "provided_name": "items"
+      }
     }
+  }
 }
